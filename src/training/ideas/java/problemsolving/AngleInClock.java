@@ -5,11 +5,11 @@ package training.ideas.java.problemsolving;
  */
 public class AngleInClock {
 
-    public static double angleCalculation(double hour, double min)
+    public static double angleCalculation(int hour, int min)
     {
         double hourAngle, minAngle, angle;
-        hourAngle=((60*hour)+min)/2;
-        minAngle=6*min;
+        hourAngle=(double)((60*hour)+min)/2;
+        minAngle=(double)6*min;
         angle= hourAngle-minAngle;
         if(hourAngle<minAngle)
         {
